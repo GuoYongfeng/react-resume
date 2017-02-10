@@ -63,13 +63,13 @@ export default class Contact extends React.Component {
                     <div className="contact-other">
                         <p className="other-title">其他方式</p>
                         <div className="other-content">
-                            <a className="other-item" href="https://github.com/swhz" target="_blank">
+                            <a className="other-item" href="https://github.com/GuoYongfeng" target="_blank">
                                 <i className="iconfont icon-github"></i>
                             </a>
-                            <a className="other-item" href="https://www.zhihu.com/people/shu-wei-zeng" target="_blank">
+                            <a className="other-item" href="" target="_blank">
                                 <i className="iconfont icon-zhihu"></i>
                             </a>
-                            <a className="other-item" href="http://weibo.com/p/1005055680903607" target="_blank">
+                            <a className="other-item" href="" target="_blank">
                                 <i className="iconfont icon-weibo"></i>
                             </a>
                         </div>

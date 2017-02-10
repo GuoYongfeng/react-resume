@@ -5,20 +5,20 @@ import { Link } from 'react-router'
 const FlipNav = ( props ) => {
   let { num, routerArray, handleClick } = props
   console.log( props );
-  
+
   return (
     <div className="layout-flip">
         <div className="back" onClick={handleClick}>
             <Link to={num > 0 ? routerArray[num - 1] : routerArray[num]}>
                 <Button type="primary">
-                    <Icon type="left" />上一页
+                    <Icon type="left" />
                 </Button>
             </Link>
         </div>
         <div className="next" onClick={handleClick}>
             <Link to={num < 4 ? routerArray[num + 1] : routerArray[num]}>
                 <Button type="primary">
-                    <Icon type="right" />下一页
+                    <Icon type="right" />
                 </Button>
             </Link>
         </div>

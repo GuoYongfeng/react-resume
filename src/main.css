@@ -123,7 +123,9 @@
     bottom: 0;
     overflow-y: scroll;
     transition: all .3s;
-    background-color:skyblue;
+    /*font-size: 15px;*/
+    /*color: #404040;*/
+    background: #f7f8fa;
 }
 
 .layout-aside-collapse .layout-main {
@@ -245,20 +247,20 @@
 .home-container .my-name {
     font-size: 3em;
     font-weight: 600;
-    text-shadow: 1px 2px deepskyblue,2px 4px lightskyblue;
-    color:whitesmoke;
+    /*text-shadow: 1px 2px deepskyblue,2px 4px lightskyblue;*/
+    /*color:whitesmoke;*/
 }
 
 .home-container .my-word {
     font-size: 1.3em;
     font-weight: 400;
-    color:#eee;
+    /*color:#eee;*/
 }
 
 .home-container .my-profession {
     font-size: 1.4em;
     font-weight: 500;
-    color: ghostwhite;
+    /*color: ghostwhite;*/
     margin: 0.2em 0;
 }
 
@@ -278,8 +280,8 @@
 .contact-container .contact-title{
     font-size: 3em;
     font-weight: 600;
-    text-shadow: 1px 2px deepskyblue,2px 4px lightskyblue;
-    color:whitesmoke;
+    /*text-shadow: 1px 2px deepskyblue,2px 4px lightskyblue;*/
+    /*color:whitesmoke;*/
     margin-bottom: 0.5em;
     width: 100%;
     text-align: center;

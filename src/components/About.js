@@ -14,12 +14,12 @@ const About = () => {
         { id: 8, styleName: 'iconfont icon-state', title: '状态', desc: '暂无意向'}
         ]
     return (
-        <div styleNameName="about-container">
-            <h1 styleNameName="about-title">关于我</h1>
-            <div styleNameName="about-content">
+        <div className="about-container">
+            <h1 className="about-title">关于我</h1>
+            <div className="about-content">
                 {
                   aboutArray.map((message) => {
-                    return <Item key={message.id} message={message} />
+                    return <AboutItem key={message.id} message={message} />
                   })
                 }
             </div>
