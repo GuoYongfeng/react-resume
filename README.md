@@ -19,3 +19,8 @@ git clone
 cd react-resume-starter & yarn install
 npm start
 ```
+
+build
+```
+npm run build
+```
