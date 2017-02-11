@@ -262,6 +262,7 @@
     font-weight: 500;
     /*color: ghostwhite;*/
     margin: 0.2em 0;
+    margin-bottom: 2.5em;
 }
 
 .home-container .my-email {
@@ -325,8 +326,8 @@
 
 .about-container .item-icon,
 .skill-container .item-icon {
-    width: 6em;
-    height: 6em;
+    width: 4em;
+    height: 4em;
     display: flex;
     display: -webkit-flex;
     align-items: center;
@@ -335,7 +336,7 @@
 
 .about-container .item-icon i,
 .skill-container .item-icon i {
-    font-size: 6em;
+    font-size: 4em;
     color: dodgerblue;
 }
 
@@ -467,7 +468,7 @@
 
 .contact-container .other-title {
     font-size: 0.6em;
-    color: whitesmoke;
+    /*color: whitesmoke;*/
     font-weight: 500;
     margin-bottom: 20px;
     position: relative;

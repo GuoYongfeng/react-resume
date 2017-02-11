@@ -11,7 +11,7 @@ const About = () => {
         { id: 5, styleName: 'iconfont icon-coordinate', title: '籍贯', desc: '江西赣州'},
         { id: 6, styleName: 'iconfont icon-experience', title: '工作经验', desc: '5年'},
         { id: 7, styleName: 'iconfont icon-intention', title: '求职意向', desc: '前端开发'},
-        { id: 8, styleName: 'iconfont icon-state', title: '状态', desc: '暂无意向'}
+        { id: 8, styleName: 'iconfont icon-state', title: '状态', desc: '在职'}
         ]
     return (
         <div className="about-container">
