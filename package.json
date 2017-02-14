@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --progress",
-    "build": "webpack -p --progress --colors"
+    "build": "npm run clean && webpack -p --progress --colors",
+    "clean": "rm -rf dist"
   },
   "author": "GuoYongfeng",
   "license": "MIT",
