@@ -4,7 +4,6 @@ import { Link } from 'react-router'
 
 const FlipNav = ( props ) => {
   let { num, routerArray, handleClick } = props
-  console.log( props );
 
   return (
     <div className="layout-flip">

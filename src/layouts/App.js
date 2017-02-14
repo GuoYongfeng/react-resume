@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
-import { Menu, Icon, Button, Modal } from 'antd'
+import { Modal } from 'antd'
 
 import NavMenu from './NavMenu'
 import FlipNav from './FlipNav'
-const SubMenu = Menu.SubMenu
+// const SubMenu = Menu.SubMenu
 
 export default class App extends Component {
     constructor(props) {
@@ -91,18 +91,10 @@ export default class App extends Component {
 
         return (
             <div className={collapse ? "layout-aside layout-aside-collapse" : "layout-aside"}>
-                <aside className="layout-sider">
-                    <div className="layout-logo">
-                        <i className="iconfont icon-jianli" id="logo"></i>
-                        {!collapse && <span className="title-text"> 郭永峰 </span>}
-                    </div>
-                    <NavMenu current={this.state.current}
-                      handleClick={this.handleClick}
-                      collapse={this.state.collapse} />
-                    <div className="aside-action" onClick={this.onCollapseChange}>
-                        {collapse ? <Icon type="right" /> : <Icon type="left" />}
-                    </div>
-                </aside>
+                <NavMenu current={this.state.current}
+                  handleClick={this.handleClick}
+                  collapse={this.state.collapse}
+                  onCollapseChange={this.onCollapseChange} />
                 <FlipNav num={this.state.num}
                   routerArray={routerArray}
                   handleClick={this.handleClick} />
