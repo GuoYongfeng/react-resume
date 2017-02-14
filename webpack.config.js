@@ -9,12 +9,11 @@ module.exports = {
     devtool: 'cheap-eval-source-map',
     entry: {
       index: path.resolve(__dirname, "./src/main.js"),
-      // react_vendor: ["react", "react-dom", "react-router"],
-      // antd_vendor: ["antd"]
+      react_vendor: ["react", "react-dom", "react-router"],
     },
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "[name].js"
+        filename: "[name].[chunkhash:8].js"
     },
     module: {
         rules: [
@@ -68,6 +67,9 @@ module.exports = {
         ]),
         new ExtractTextWebpackPlugin({
           filename: "bundle.css"
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+          name: "common"
         })
     ],
     devServer: {

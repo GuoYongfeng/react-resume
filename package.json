@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --progress",
-    "build": "webpack --progress --colors"
+    "build": "webpack -p --progress --colors"
   },
   "author": "GuoYongfeng",
   "license": "MIT",
