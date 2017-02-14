@@ -4,21 +4,22 @@ import { Modal } from 'antd'
 
 import NavMenu from './NavMenu'
 import FlipNav from './FlipNav'
-// const SubMenu = Menu.SubMenu
+
+import './App.css'
 
 export default class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            collapse: true,
-            current: 'home',
-            num: 0,
-            visible: false,
-            direction: 1
+          collapse: true,
+          current: 'home',
+          num: 0,
+          visible: false,
+          direction: 1
         }
-        this.onCollapseChange = this.onCollapseChange.bind(this)
         this.handleClick = this.handleClick.bind(this)
         this.handleCancel = this.handleCancel.bind(this)
+        this.onCollapseChange = this.onCollapseChange.bind( this )
     }
 
     //在完成首次渲染之前调用（首次加载或刷新页面），根据url的hash值改变state，具体表现为侧边栏选中项与页面渲染页相对应
@@ -71,13 +72,6 @@ export default class App extends Component {
         this.scroll.scrollTop = 0
     }
 
-    //侧边栏状态切换
-    onCollapseChange() {
-        this.setState({
-            collapse: !this.state.collapse,
-        })
-    }
-
     //隐藏模态框
     handleCancel() {
         this.setState({
@@ -85,15 +79,21 @@ export default class App extends Component {
         })
     }
 
+    onCollapseChange() {
+        this.setState({
+            collapse: !this.state.collapse,
+        })
+    }
+
     render() {
-        const { collapse, num, direction } = this.state
+        const { num, direction, collapse } = this.state
         const routerArray = ['/', '/about', '/skill', '/project', '/contact']
 
         return (
             <div className={collapse ? "layout-aside layout-aside-collapse" : "layout-aside"}>
                 <NavMenu current={this.state.current}
                   handleClick={this.handleClick}
-                  collapse={this.state.collapse}
+                  collapse={collapse}
                   onCollapseChange={this.onCollapseChange} />
                 <FlipNav num={this.state.num}
                   routerArray={routerArray}

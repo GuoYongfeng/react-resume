@@ -13,7 +13,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "[name].[chunkhash:8].js"
+        filename: "[name].[hash:8].js"
     },
     module: {
         rules: [
