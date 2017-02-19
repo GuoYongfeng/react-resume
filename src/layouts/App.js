@@ -4,11 +4,26 @@ import NavMenu from './NavMenu.js'
 import './App.css'
 
 class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      collapse: false
+    }
+    this.handleCollapse = this.handleCollapse.bind(this)
+  }
+  handleCollapse(){
+    this.setState({
+      collapse: !this.state.collapse
+    })
+  }
   render(){
+    const collapse = this.state.collapse;
+
     return (
       <div>
-        <NavMenu />
-        <div className="main">
+        <NavMenu collapse={ collapse }
+          handleCollapse={this.handleCollapse}/>
+        <div className={ collapse ? "main main-collapse" : "main"}>
           <ReactCSSTransitionGroup
             className="app"
             component="div"
