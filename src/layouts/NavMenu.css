@@ -8,6 +8,14 @@
   background: #404040;
   transition: all .3s;
 }
+.layout-aside-collapse {
+  width: 64px;
+  /*transition: all .3s;*/
+}
+.layout-aside-collapse .layout-logo {
+  margin: 16px;
+  transition: all .3s;
+}
 ul, li {
   list-style-type: none;
 }
@@ -29,12 +37,17 @@ a {
   cursor: pointer;
   text-align: center;
 }
+.aside-action-collapse {
+  width: 64px;
+  transition: all .3s;
+}
 .layout-logo {
   height: 32px;
   line-height: 32px;
   margin: 16px 24px;
   background: #404040;
   transition: all .3s;
+  overflow: hidden;
 }
 
 .logo {
@@ -50,4 +63,7 @@ a {
   color: #fff;
   line-height: 32px;
   font-size: 20px;
+  display: inline-block;
+  transition: all .3s;
+  vertical-align: top;
 }

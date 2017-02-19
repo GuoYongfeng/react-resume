@@ -7,6 +7,10 @@
   background-color: #f7f8fa;
   padding: 20px 40px 40px;
 }
+.main-collapse {
+  left: 64px;
+  transition: all .3s;
+}
 .app {
   position: relative;
   height: 100%;
