@@ -1,0 +1,38 @@
+.main {
+  position: absolute;
+  left: 150px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #f7f8fa;
+  padding: 20px 40px 40px;
+}
+.app {
+  position: relative;
+  height: 100%;
+}
+.content {
+  position: absolute;
+  width: 100%;
+}
+.app-enter {
+  opacity: 0.01;
+  transition: all 1000ms ease;
+  transform: translate3d(100%, 0, 0);
+}
+
+.app-enter.app-enter-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.app-leave {
+  opacity: 1;
+  transition: all 500ms ease;
+  transform: translate3d(100%, 0, 0);
+}
+
+.app-leave.app-leave-active {
+  opacity: 0.01;
+  transform: translate3d(0, 0, 0);
+}

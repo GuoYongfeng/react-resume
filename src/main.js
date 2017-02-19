@@ -2,7 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import './main.css'
+import './assets/fonts/iconfont.css'
+import 'antd/dist/antd.css'
 
-import App from './layouts/App.s'
+import route from './routes'
 
-ReactDOM.render( <App /> , document.getElementById('app'))
+ReactDOM.render( route , document.getElementById('app'))
