@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -42,6 +43,9 @@ jspm_packages
 .vscode/
 =======
 node_moduels
+=======
+node_modules
+>>>>>>> save
 *.log
 .DS_Store
 >>>>>>> save
