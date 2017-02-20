@@ -23,10 +23,11 @@ class NavMenu extends Component {
 
     const data = [
       { name: "home", desc: "首页" },
+      { name: "about", desc: "关于我" },
       { name: "skill", desc: "工作技能" },
       { name: "project", desc: "项目经验" },
-      { name: "contact", desc: "联系我" },
-      { name: "about", desc: "关于我" }
+      { name: "contact", desc: "联系我" }
+      
     ]
     const { collapse, handleCollapse, pathname } = this.props;
 
