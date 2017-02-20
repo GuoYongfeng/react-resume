@@ -7,7 +7,8 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      collapse: false
+      collapse: false,
+      pathname: "home"
     }
     this.handleCollapse = this.handleCollapse.bind(this)
   }
@@ -16,13 +17,23 @@ class App extends Component {
       collapse: !this.state.collapse
     })
   }
+  componentDidUpdate(prevProps, nextProps){
+    const newPathname = window.location.hash.split("#/")[1] || "home";
+
+    if(newPathname != nextProps.pathname){
+      this.setState({
+        pathname: newPathname
+      })
+    }
+  }
   render(){
     const collapse = this.state.collapse;
 
     return (
       <div>
         <NavMenu collapse={ collapse }
-          handleCollapse={this.handleCollapse}/>
+          handleCollapse={this.handleCollapse}
+          pathname={this.state.pathname}/>
         <div className={ collapse ? "main main-collapse" : "main"}>
           <ReactCSSTransitionGroup
             className="app"
