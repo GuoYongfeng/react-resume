@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
-import NavMenu from './NavMenu.js'
-import './App.css'
+import NavMenu from '../NavMenu'
+import './index.css'
 
 class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      collapse: false,
+      collapse: true,
       pathname: "home"
     }
     this.handleCollapse = this.handleCollapse.bind(this)

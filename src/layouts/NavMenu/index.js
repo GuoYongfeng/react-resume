@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Menu, Icon } from 'antd'
 import { Link } from 'react-router'
 
-import './NavMenu.css'
+import './index.css'
 
 class NavMenu extends Component {
 
