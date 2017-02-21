@@ -1,0 +1,53 @@
+.project {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  font-size: 1.3vw;
+  font-family: Lato,"Microsoft YaHei",sans-serif;
+  height: 100%;
+  line-height: 1.15;
+}
+.project-title {
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  width: 100%;
+  text-align: center;
+}
+.project-content {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    flex: auto;
+}
+.project .ant-timeline {
+    width: 100%;
+}
+.project .item-title {
+    font-size: 2em;
+    color: dodgerblue;
+}
+
+.project .item-link {
+    color: dimgray;
+    font-size: 0.5em;
+    padding: 0.1em 0.3em;
+    margin-left: 10px;
+    border: 1.5px solid darkgray;
+    border-radius: 10px;
+}
+
+.project .item-info {
+    margin: 0;
+}
+
+.project .item-desc {
+    color: dimgray;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
