@@ -87,7 +87,7 @@ export default class App extends Component {
 
     render() {
         const { num, direction, collapse } = this.state
-        const routerArray = ['/', '/about', '/skill', '/project', '/contact']
+
 
         return (
             <div className={collapse ? "layout-aside layout-aside-collapse" : "layout-aside"}>
@@ -96,7 +96,6 @@ export default class App extends Component {
                   collapse={collapse}
                   onCollapseChange={this.onCollapseChange} />
                 <FlipNav num={this.state.num}
-                  routerArray={routerArray}
                   handleClick={this.handleClick} />
                 <div className={direction > 0 ? "layout-main" : "layout-main back"} ref={(div) => { this.scroll = div }}>
                     <ReactCSSTransitionGroup

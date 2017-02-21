@@ -1,0 +1,36 @@
+
+#logo {
+    font-size: 30px;
+    color: #ffffff;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -o-transition:all 1s;
+    -ms-transition:all 1s;
+    transition:all 1s;
+}
+#logo:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.layout-aside .layout-logo {
+    height: 32px;
+    background: #404040;
+    margin: 16px 24px;
+    transition: all .3s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.layout-aside-collapse .layout-logo {
+    margin: 16px;
+    transition: all .3s;
+}
+.layout-aside .layout-logo .title-text {
+    vertical-align: top;
+    display: inline-block;
+    color: #fff;
+    line-height: 32px;
+    font-size: 20px;
+}

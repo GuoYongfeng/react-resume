@@ -3,7 +3,9 @@ import { Menu, Button, Icon } from 'antd'
 import { Link } from 'react-router'
 
 const FlipNav = ( props ) => {
-  let { num, routerArray, handleClick } = props
+  const routerArray = ['/', '/about', '/skill', '/project', '/contact']
+
+  let { num, handleClick } = props
 
   return (
     <div className="layout-flip">

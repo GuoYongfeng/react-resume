@@ -10,8 +10,8 @@ const TimelineItem = ( props ) => {
             <div className="item-title">
                 { name }
                 <a className="item-link"
-                href={html_url}
-                target="_blank">
+                  href={html_url}
+                  target="_blank">
                     <i className="iconfont icon-link"></i>源代码
                 </a>
             </div>
