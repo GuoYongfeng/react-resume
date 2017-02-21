@@ -1,0 +1,55 @@
+.skills {
+  font-size: 1.3vw;
+}
+.skills-title {
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  width: 100%;
+  text-align: center;
+}
+.skills-content {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2em 0;
+  flex: auto;
+}
+.skills .item {
+  width: 30em;
+  height: 6.5em;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+.skills .item-icon {
+  width: 4em;
+  height: 4em;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;justify-content: center;
+}
+.skills .item-icon i {
+  font-size: 5em;
+  color: dodgerblue;
+}
+.skills .item-info {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+.skills .info-title {
+  font-size: 2em;
+  color: dodgerblue;
+  line-height: 1em;
+}
+.skills .info-desc {
+  font-size: 1.5em;
+  color: #666;
+}
